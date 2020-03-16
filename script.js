@@ -1,3 +1,8 @@
+FIXME: //make start click not add a score
+TODO: //add score to local Storage
+TODO: //add score to high score list
+
+
 var timerEl = document.querySelector(".timer");
 var scoreEl = document.querySelector(".score");
 var questionEl = document.querySelector(".question");
@@ -10,7 +15,7 @@ var rightChoiceEl = document.querySelector(".right");
 
 
 // timer start value
-var timeLeft = 2;
+var timeLeft = 60;
 
 // question objects
 var questionOne = {
@@ -80,6 +85,8 @@ qAEl.addEventListener("click", function(){
                 answerTwoEl.innerHTML ="<button> B </button>" + ": " + qArr[i].wrongTwo;
                 answerThreeEl.innerHTML ="<button> C </button>" + ": " + qArr[i].wrongThree;
                 answerFourEl.innerHTML ='<button class="right"> D </button>' + ": " + qArr[i].right; 
+
+                timeLeft = timeLeft - 10;
             }
         }
         i++
