@@ -6,17 +6,21 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <h5 class="timer">
+            <div class="col-md-4">
+                <h5 class="timer margin">
                     Timer: 60
                 </h5>
             </div>
-            <div class="col-md-6">
-                <h5 class="score">
+            <div class="col-md-4 ">
+                
+            </div>
+            <div class="col-md-4 left">
+                <h5 class="score margin">
                     Score: 0
                 </h5>
             </div>
@@ -27,14 +31,14 @@
             <div class="col-md-4"></div>
             <div class="col-md-4">
                 <div class="question-answer">
-                    <div class="row question">
+                    <div class="row question center">
                         
-                            <p>Click here to start <br><button>Start</button></p>
+                            <p>Welcome to a basic coding quiz! Click start whenever you're ready!<br><br><button class="start btn btn-info">Start</button></p>
                         
-                    </div>
-                    <div class="row answer-one"></div>
-                    <div class="row answer-two"></div>
-                    <div class="row answer-three"></div>
+                    </div><br>
+                    <div class="row answer-one"></div><br>
+                    <div class="row answer-two"></div><br>
+                    <div class="row answer-three"></div><br>
                     <div class="row answer-four right"></div>
                 </div>
             </div>
@@ -48,13 +52,36 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <p>HighScores</p>
-                <div class="high-score">
-
+                <div class="row">
+                    <div class="col-md-12 score-submit">
+                        <label for="name">Name</label>
+                        <input class="name" type="text" id="name"></input>
+                        <input class="submit btn btn-info margin" type="submit"></input>
+                    </div>
+                </div> 
+                <br>   
+                <div class="row">
+                    <div class="col-md-12 margin2">
+                        Previous Scores
+                    </div>
+                </div>           
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="high-score overflow">
+                        </div>
+                    </div>
                 </div>
+
             </div>
             <!-- empty column -->
-            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <br>
+                <div class="row margin">
+                    <div class="col-md-12 placement">
+                        
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

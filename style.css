@@ -1,11 +1,42 @@
-.question-answer{
-    
-    height: 300px;
-   
+body{
+    font-family: 'Press Start 2P', cursive; 
+}
+.question-answer{    
+    height: 300px;  
 }
 
-.high-score{
-    background-color: rgb(229, 227, 231);
-    height: 200px;
+.green{
+    background-color:chartreuse;
+}
+
+.red{
+    background-color: red;
+}
+
+.center{
+    text-align: center;
+}
+
+
+.left{
+    text-align: right;
+}
+
+.margin{
+    margin-top: 10px;
+}
+
+.margin2{
+    margin-bottom: 10px;
+}
+.overflow{
+    height: 300px;
     overflow: scroll;
+}
+.score-submit{
+    display: none;
+}
+
+.placement{
+    display: hidden;
 }
